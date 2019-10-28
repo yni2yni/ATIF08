@@ -1,6 +1,6 @@
 // ADS Touch Sensor Test Example Program (IC P/N:ATIF08 )
 // Code: 
-// Date: 2019.10.23  Ver.: 0.0.2
+// Date: 2019.10.28  Ver.: 0.0.3
 // H/W Target: ARDUINO UNO R3 / Leonardo, S/W: Arduino IDE  1.8.10
 // Author: Park, Byoungbae (yni2yni@hanmail.net)
 // Note: More information? Please send to e-mail.
@@ -155,7 +155,7 @@ void  Init_ATIF08(void)
    Wire.write(byte(0x20)); //0x11h
    Wire.write(byte(0xFF)); //0x12h
    Wire.write(byte(0x92)); //0x13h
-   Wire.write(byte(0x83)); //0x14h //RF Noise Mode Control
+   Wire.write(byte(0x88)); //0x14h //RF Noise Mode Control 8ch 
    Wire.write(byte(0x73)); //0x15h
    Wire.write(byte(0x64)); //0x16h
    Wire.write(byte(0xFF)); //0x17h 
