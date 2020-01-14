@@ -43,8 +43,8 @@
 
 #define Output  0x2A //Touch Output Data Register 1Byte (1~8Key)
 
-#define ATIF08_ID  0x24 //0x48<<1 (7bit=0x24, 8bit=0x48, Chip_DI=VDD or Open)
-// #define ATIF08_ID  0x7C //0xF8<<1 (7bit=0x7C, 8bit=0xF8, Chip_DI= GND)
+#define ATIF08_ID  0x24 //0x48>>1 (7bit=0x24, 8bit=0x48, Chip_DI=VDD or Open)
+// #define ATIF08_ID  0x7C //0xF8>>1 (7bit=0x7C, 8bit=0xF8, Chip_DI= GND)
 
 void  Init_ATIF08(void); //Initialize ATIF08
 
